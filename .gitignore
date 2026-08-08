@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+run_*.log
+.venv/
+.DS_Store
+# large champion weights from the forager foundation (regenerable)
+results_forager/
+results_social/

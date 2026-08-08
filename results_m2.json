@@ -1,0 +1,9 @@
+{
+  "acc_train": 0.7320000529289246,
+  "acc_full": 0.8579414486885071,
+  "acc_frozen": 0.125,
+  "context_only": 0.17,
+  "chance": 0.125,
+  "beat": true,
+  "mediator": true
+}

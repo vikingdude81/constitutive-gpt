@@ -1,0 +1,11 @@
+{
+  "full": 0.731992244720459,
+  "memory_only": 0.7027969360351562,
+  "context_only": 0.16011719405651093,
+  "context_bound": 0.17,
+  "chance": 0.125,
+  "beta": 1.7168813943862915,
+  "gamma": 0.4414529502391815,
+  "record_idle": true,
+  "bearer_loadbearing": true
+}
