@@ -43,15 +43,13 @@ os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
 
 import argparse
 import json
-import math
 import time
 
 import numpy as np
 import torch
-import torch.nn.functional as F
 
 from cca_milestone1 import (A_CONSUME, A_WAIT, Config, MOVES, N_ACTIONS,
-                            PlasticAgent, band_dist)
+                            PlasticAgent)
 
 
 # ----------------------------------------------------------------------------

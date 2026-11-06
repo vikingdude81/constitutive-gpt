@@ -36,7 +36,7 @@ import numpy as np
 import torch
 
 import gpu_batched as G
-from cca_milestone1 import Config, PlasticAgent, A_CONSUME, A_WAIT, N_ACTIONS
+from cca_milestone1 import Config, PlasticAgent, A_CONSUME, A_WAIT
 
 K = 6  # nutrient types (matches cfg.K)
 EMA = 0.04          # diet decay: recent-diet histogram
@@ -362,7 +362,7 @@ def main():
     print(f"[GATE] plastic ON-OFF = {g:+.3f} ({'PASS' if g > 0.03 else 'FAIL'})")
 
     mean, dP, dP_ci = bearer_sweep(theta, cfg, spec, base, obs_dim, device, seeds=args.sweep_seeds, life=args.lifetime, blind=eb)
-    print(f"\n[BEARER SWEEP] self vs wrong on own-body metabolic viability:")
+    print("\n[BEARER SWEEP] self vs wrong on own-body metabolic viability:")
     print(f"{'lambda':>7} {'self':>10} {'wrong':>10} {'deltaP':>16}")
     for i, l in enumerate([0.0, 0.25, 0.5, 0.75, 1.0]):
         print(f"{l:>7.2f} {mean[i,0]:>+10.4f} {mean[i,1]:>+10.4f} {dP[i]:>+8.4f}+/-{dP_ci[i]:.4f}")

@@ -69,12 +69,10 @@ def run_cell(args) -> dict:
         from cca_milestone1 import Config, run_pair
         cfg = Config(seed=seed, lambda_b=lam)
         runner = lambda **kw: run_pair(cfg, steps, **kw)
-        obs_env_cfg = cfg
     else:
         from pd_social_env import SocialConfig, run_pair_social
         cfg = SocialConfig(seed=seed, lambda_b=1.0, lambda_social=lam)
         runner = lambda **kw: run_pair_social(cfg, steps, **kw)
-        obs_env_cfg = cfg
 
     init_fn = None
     if theta is not None:

@@ -36,7 +36,6 @@ from __future__ import annotations
 import os as _os
 _os.environ.setdefault("CUDA_VISIBLE_DEVICES", "-1")
 
-import math
 from dataclasses import dataclass, field
 
 import numpy as np

@@ -37,8 +37,7 @@ import argparse, json
 import numpy as np
 import torch
 
-from constitutive_gpt_m1 import bayes_map_accuracy
-from constitutive_gpt_m2 import make_spec, init_theta, unflat, es_train
+from constitutive_gpt_m2 import make_spec, unflat, es_train
 
 
 @torch.no_grad()

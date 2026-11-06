@@ -192,7 +192,7 @@ def main():
     learned_gamma = float(unflat(th, spec, args.K, args.d)["log_gamma"].exp().squeeze())
     learned_beta = float(unflat(th, spec, args.K, args.d)["log_beta"].exp().squeeze())
 
-    print(f"\n[DOUBLE DISSOCIATION]")
+    print("\n[DOUBLE DISSOCIATION]")
     print(f"  full (both channels)          {full:.3f}")
     print(f"  ablate context (memory only)  {mem_only:.3f}   (record removed)")
     print(f"  freeze memory (context only)  {ctx_only:.3f}   (bearer removed)")

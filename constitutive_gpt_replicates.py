@@ -21,7 +21,6 @@ import argparse, json, time
 import numpy as np
 import torch
 
-from constitutive_gpt_m1 import bayes_map_accuracy
 from constitutive_gpt_m2 import make_spec, es_train
 from constitutive_gpt_m3 import rollout_bearer
 

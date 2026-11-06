@@ -135,7 +135,7 @@ def train(cfg, pop, generations, lifetime, sigma, lr, holdout_every,
     log(f"  champion mean : {champ_mean:+.4f}")
     log(f"  random   mean : {rand_mean:+.4f}  (best random {max(rand_per):+.4f})")
     log(f"  advantage     : {champ_mean - rand_mean:+.4f}")
-    log(f"  champion per-world: " + " ".join(f"{v:+.2f}" for v in champ_per_world))
+    log("  champion per-world: " + " ".join(f"{v:+.2f}" for v in champ_per_world))
     verdict = ("TRAINED: champion generalizes past random."
                if champ_mean - rand_mean > 0.05 else
                "NOT TRAINED: no real advantage over random. Do not sweep this.")

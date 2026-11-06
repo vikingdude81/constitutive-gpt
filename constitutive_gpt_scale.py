@@ -234,7 +234,7 @@ def main():
               f"bearer-specific (self beats wrong-bearer, falsifier isolates). The Constitutive GPT "
               f"holds at scale.")
     else:
-        print(f"  PHASE 1 PARTIAL: not all criteria met at this budget; see numbers above.")
+        print("  PHASE 1 PARTIAL: not all criteria met at this budget; see numbers above.")
 
     json.dump({"d": args.d, "params": D, "best": best, "full": full, "memory_only": mem_only,
                "context_only": ctx_only, "context_bound": ctx, "chance": chance,
